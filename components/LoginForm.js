@@ -1,7 +1,10 @@
-import React, { useState, useCallback, useMemo } from "react";
-import { Form, Input, Button } from "antd";
-import Link from "next/link";
-import styled from "styled-components";
+import React, { useCallback, useMemo } from 'react';
+import { Form, Input, Button } from 'antd';
+import Link from 'next/link';
+import styled from 'styled-components';
+import useinput from '../hooks/useinput';
+import { useDispatch } from 'react-redux';
+import { loginAction } from '../reducers';
 
 const ButtonWrapper = styled.div`
   margin-top: 10px;
@@ -9,25 +12,18 @@ const ButtonWrapper = styled.div`
 
 const FormWrapper = styled(Form)`
   padding: 10px;
-`
+`;
 
-const LoginForm = ({ setIsLoggedIn }) => {
-  const [id, setId] = useState("");
-  const [password, setPassword] = useState("");
-
-  const onChangeId = useCallback((e) => {
-    setId(e.target.value);
-  }, []);
-
-  const onChangePassword = useCallback((e) => {
-    setPassword(e.target.value);
-  }, []);
+const LoginForm = () => {
+  const dispatch = useDispatch();
+  const [id, onChangeId] = useinput('');
+  const [password, onChangePassword] = useinput('');
 
   const style = useMemo(() => ({ marginTop: 10 }), []);
 
   const onSubmitForm = useCallback(() => {
     console.log(id, password);
-    setIsLoggedIn(true);
+    dispatch(loginAction({ id, password }));
   }, [id, password]);
 
   return (

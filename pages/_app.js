@@ -1,7 +1,8 @@
-import React from "react";
-import PropTypes from "prop-types";
-import Head from "next/head";
-import "antd/dist/antd";
+import React from 'react';
+import propTypes from 'prop-types';
+import Head from 'next/head';
+import 'antd/dist/antd';
+import wrapper from '../store/configureStore';
 
 const App = ({ Component }) => {
   return (
@@ -16,7 +17,7 @@ const App = ({ Component }) => {
 };
 
 App.prototype = {
-  Component: PropTypes.elementType.isRequired,
+  Component: propTypes.elementType.isRequired,
 };
 
-export default App;
+export default wrapper.withRedux(App);
