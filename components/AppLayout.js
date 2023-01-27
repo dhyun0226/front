@@ -1,5 +1,5 @@
 import React from 'react';
-import propTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import Link from 'next/link';
 import { Input, Menu, Row, Col } from 'antd';
 import styled from 'styled-components';
@@ -58,8 +58,8 @@ const AppLayout = ({ children }) => {
   );
 };
 
-AppLayout.prototype = {
-  children: propTypes.node.isRequired,
+AppLayout.propTypes = {
+  children: PropTypes.node.isRequired,
 };
 
 export default AppLayout;

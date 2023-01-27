@@ -9,13 +9,13 @@ const initialState = {
       content: '첫 번째 게시글 #Vue3 #node',
       Images: [
         {
-          src: 'https://www.google.com/imgres?imgurl=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Ff%2Ff1%2FVue.png&imgrefurl=https%3A%2F%2Fko.wikipedia.org%2Fwiki%2FVue.js&tbnid=C3RxwPDjQH7LKM&vet=12ahUKEwjs38eZ2OH8AhXiKKYKHZbpBvwQMygAegUIARC-AQ..i&docid=EHtDKZrjGSHRkM&w=400&h=400&q=vue&ved=2ahUKEwjs38eZ2OH8AhXiKKYKHZbpBvwQMygAegUIARC-AQ',
+          src: 'https://vuejs.org/images/logo.png',
         },
         {
-          src: 'https://www.google.com/imgres?imgurl=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Ff%2Ff1%2FVue.png&imgrefurl=https%3A%2F%2Fko.wikipedia.org%2Fwiki%2FVue.js&tbnid=C3RxwPDjQH7LKM&vet=12ahUKEwjs38eZ2OH8AhXiKKYKHZbpBvwQMygAegUIARC-AQ..i&docid=EHtDKZrjGSHRkM&w=400&h=400&q=vue&ved=2ahUKEwjs38eZ2OH8AhXiKKYKHZbpBvwQMygAegUIARC-AQ',
+          src: 'https://vuejs.org/images/logo.png',
         },
         {
-          src: 'https://www.google.com/imgres?imgurl=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Ff%2Ff1%2FVue.png&imgrefurl=https%3A%2F%2Fko.wikipedia.org%2Fwiki%2FVue.js&tbnid=C3RxwPDjQH7LKM&vet=12ahUKEwjs38eZ2OH8AhXiKKYKHZbpBvwQMygAegUIARC-AQ..i&docid=EHtDKZrjGSHRkM&w=400&h=400&q=vue&ved=2ahUKEwjs38eZ2OH8AhXiKKYKHZbpBvwQMygAegUIARC-AQ',
+          src: 'https://vuejs.org/images/logo.png',
         },
       ],
       Comments: [
